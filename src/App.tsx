@@ -25,7 +25,7 @@ export function App() {
           </button>
         )}
       >
-        <BrowserRouter>
+        <BrowserRouter basename="/touch_it">
           <Routes>
             <Route path="/" element={<Main />}>
               <Route index element={<ProductsPage />} />
