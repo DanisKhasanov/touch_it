@@ -3,7 +3,7 @@ import { Provider } from "react-redux";
 import { store } from "./store";
 import { SnackbarProvider } from "notistack";
 import { Main } from "./pages/main";
-// import NotFound from "./pages/notFoundPage";
+import NotFound from "./pages/notFoundPage";
 import ProductsPage from "./pages/productsPage";
 import CartPage from "./pages/cartPage";
 import ProductDetailPage from "./pages/productDetalPage";
@@ -31,7 +31,7 @@ export function App() {
               <Route index element={<ProductsPage />} />
               <Route path="/product/:id" element={<ProductDetailPage />} />
               <Route path="/cart" element={<CartPage />} />
-              {/* <Route path="*" element={<NotFound />} /> */}
+              <Route path="*" element={<NotFound />} />
             </Route>
           </Routes>
         </BrowserRouter>
